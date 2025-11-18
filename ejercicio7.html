@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla</title>
+    <meta name="description" content="Esto es la descripción de mi página web">
+    <meta name="keywords" content="html, ejercicio, ejercicio1, ejemplo">
+    <meta name="author" content="Javier_Arriaza">
+    <meta name="application-name" content="ejemplo_icono.html">
+    <meta name="generator" content="VSCode">
+    <link rel="icon" sizes="64x64" href="./assets/icons/images.jpg">
+</head>
+<body>
+<h1>Rellena tu CV</h1>
+<form action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+
+
+<div class="field">
+<label for="nombre">Nombre</label><br>
+<input type="text" id="nombre" name="nombre" required />
+</div>
+
+<div class="field">
+<label for="apellidos">Apellidos</label><br>
+<input type="text" id="apellidos" name="apellidos" required />
+</div>
+
+<div class="field">
+<label for="contrasena">Contraseña</label><br>
+<input type="password" id="contrasena" name="contrasena" required />
+</div>
+
+<div class="field">
+<label for="dni">DNI</label><br>
+<input type="text" id="dni" name="dni" inputmode="text" />
+</div>
+
+<div class="field">
+<span style="display:block; font-weight:600; margin-bottom:.375rem;">Sexo</span><div class="inline-group" role="radiogroup" aria-label="Sexo">
+<label class="inline">
+<input type="radio" name="sexo" value="hombre" /> Hombre
+</label><br>
+<label class="inline">
+<input type="radio" name="sexo" value="mujer" /> Mujer
+</label>
+</div><br><br>
+
+</div>
+
+<div class="field">
+<label for="foto">Incluir mi foto</label>
+<input type="file" id="foto" name="foto" accept="image/*" />
+</div><br><br>
+
+<div class="field inline-group">
+<label class="inline" for="boletin">
+<input type="checkbox" id="boletin" name="boletin" />
+Suscribirme al boletín de novedades
+</label>
+</div>
+
+<div class="actions">
+<button type="submit" class="primary">Guardar cambios</button>
+<button type="reset" class="secondary">Borrar los datos introducidos</button>
+</div>
+</body>
+</html>
